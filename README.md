@@ -1,4 +1,4 @@
-# watchdog-nodejs
+# watchdog-node
 Very simple script watchdog. Auto-restart script when crashed 
 
 ## CMD Args
