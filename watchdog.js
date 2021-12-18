@@ -11,13 +11,14 @@ process.argv.join(" ").split("--").slice(1).forEach(arg => {
 
 if(!args.script) args.script = "run"
 if(!args.wait) args.wait = 10000
+if(!args.cmd) args.cmd = false
 
 function init(){
     const child = exec('node '+args.script);
 
     child.on('exit', function (code, signal) {
-        console.log("["+args.script+"] Restart");
-        setTimeout(init, args.wait)
+        if(args.cmd) console.log("("+new Date().toLocaleString()+") ["+args.script+"] Restart");
+        setTimeout(init, +args.wait)
     });
 }
 
