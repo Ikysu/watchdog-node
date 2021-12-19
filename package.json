@@ -1,0 +1,25 @@
+{
+  "name": "watchdog-node",
+  "version": "1.0.3",
+  "description": "Very simple script watchdog. Auto-restart script when crashed",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ikysu/watchdog-node.git"
+  },
+  "author": "Ikysu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ikysu/watchdog-node/issues"
+  },
+  "homepage": "https://github.com/Ikysu/watchdog-node#readme",
+  "scripts": {
+    "test": "watchdog"
+  },
+  "bin": {
+    "watchdog": "./index.js"
+  },
+  "keywords": [
+    "watchdog"
+  ]
+}
